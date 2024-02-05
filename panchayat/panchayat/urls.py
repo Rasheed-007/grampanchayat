@@ -20,8 +20,11 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('insertapplicationDetails' , views.insertapplicationDetails,name="insertapplicationDetails"),
-    url('insertCertificaterequest' , views.insertCertificaterequest,name="insertCertificaterequest"),
-
+    url('insertapplicationDetails', views.insertapplicationDetails, name="insertapplicationDetails"),
+    url('insertCertificaterequest', views.insertCertificaterequest, name="insertCertificaterequest"),
+    url('insertCertificateDetails', views.insertCertificateDetails, name="insertCertificateDetails"),
+    url('insertCitizenDetails', views.insertCitizenDetails, name="insertCitizenDetails"),
+    url('insertComplaints', views.insertComplaints, name="insertComplaints"),
+    url('insertSchemes', views.insertSchemes, name="insertSchemes"),
 
 ]
