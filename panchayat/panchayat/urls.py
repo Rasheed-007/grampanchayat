@@ -20,6 +20,8 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    url('userlogin',views.userlogin,name="userlogin"),
+    url('logcheck', views.logcheck, name="logcheck"),
     url('insertapplicationDetails', views.insertapplicationDetails, name="insertapplicationDetails"),
     url('insertCertificaterequest', views.insertCertificaterequest, name="insertCertificaterequest"),
     url('insertCertificateDetails', views.insertCertificateDetails, name="insertCertificateDetails"),
@@ -54,6 +56,11 @@ urlpatterns = [
     #Complaints view and delete from database
     url('view_schemes', views.view_schemes,name="view_schemes"),
     url('schemes_del/(?P<pk>\d+)/$', views.schemes_del, name='schemes_del'),
+
+    #Contact view and delete from database
+    url('view_contact', views.view_contact,name="view_contact"),
+    url('contact_del/(?P<pk>\d+)/$', views.contact_del, name='contact_del'),
+
 
 
 

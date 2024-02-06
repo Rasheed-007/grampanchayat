@@ -8,17 +8,46 @@ from citizen.models import complaints
 from citizen.models import citizendetails
 from citizen.models import certificatedetails
 from citizen.models import contact
-
-
-
+from citizen.models import userlogin
 
 
 # Create your views here.
 
 # create user login page
+# def userlogin(request):
+#     if request.method == 'POST':
+#         s1 = request.POST.get("t1")
+#         s2 = request.POST.get("t2")
+#         userlogin.objects.create(username=s1, password=s2)
+#         return render(request, "userlogin_page.html")
+#
+#     return render(request, "userlogin_page.html")
+
+
+def logcheck(request):
+    if request.method == "POST":
+        s1 = request.POST.get("t1")
+        request.session['username'] = s1
+        s2 = request.POST.get("t2")
+        ucheck = userlogin.objects.filter(username=s1).count()
+        if ucheck >= 1:
+            udata = userlogin.objects.get(username=s1)
+            upass = udata.password
+            utype = udata.utype
+            if upass == s2:
+                if utype == "admin":
+                    return render(request, 'admin_page.html')
+                if utype == "citizen":
+                    return render(request, 'citizen_page.html')
+            else:
+                return render(request, 'userlogin_page.html', {'msg': 'invalid password'})
+        else:
+            return render(request, 'userlogin_page.html', {'msg': 'invalid username'})
+    return render(request, "userlogin_page.html")
+
 
 def insertcontact(request):
-    if (request.method== 'POST'):
+    if (request.method == 'POST'):
         s1 = request.POST.get("t1")
         s2 = request.POST.get("t2")
         s3 = request.POST.get("t3")
@@ -26,8 +55,7 @@ def insertcontact(request):
         contact.objects.create(Name=s1, Email_id=s2, Message=s3, Feedback=s4)
         return render(request, "contact.html")
 
-    return render(request,"contact.html")
-
+    return render(request, "contact.html")
 
 
 def insertapplicationDetails(request):
@@ -76,7 +104,7 @@ def insertCertificateDetails(request):
         s10 = request.POST.get("t10")
         s11 = request.POST.get("t11")
         certificatedetails.objects.create(Request_id=s1, Certificate_no=s2, Type=s3, Issue_Date=s4, Name=s5,
-                                          Father_Name=s6, Mother_Name=s7, Reason=s8,Date=s9, time=s10, status=s11)
+                                          Father_Name=s6, Mother_Name=s7, Reason=s8, Date=s9, time=s10, status=s11)
 
         return render(request, "'CertificateDetails'.html")
     return render(request, "'CertificateDetails'.html")
@@ -145,6 +173,7 @@ def applicationdetails_del(request, pk):
     userdict = applicationdetails.objects.all()
     return render(request, "views_certificate_details.html", {'userdict': userdict})
 
+
 def view_certificaterequest(request):
     userdict = certificaterequest.objects.all()
     return render(request, "views_certificate_request.html", {'userdict': userdict})
@@ -192,6 +221,7 @@ def complaints_del(request, pk):
     userdict = complaints.objects.all()
     return render(request, "view_complaints.html", {'userdict': userdict})
 
+
 def view_schemes(request):
     userdict = schemes.objects.all()
     return render(request, "view_schemes.html", {'userdict': userdict})
@@ -204,4 +234,13 @@ def schemes_del(request, pk):
     return render(request, "view_schemes.html", {'userdict': userdict})
 
 
+def view_contact(request):
+    userdict = contact.objects.all()
+    return render(request, "view_contact.html", {'userdict': userdict})
 
+
+def contact_del(request, pk):
+    rid = contact.objects.get(id=pk)
+    rid.delete()
+    userdict = contact.objects.all()
+    return render(request, "view_contact.html", {'userdict': userdict})
