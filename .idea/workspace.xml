@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c09a3f98-10a1-495e-8665-17e0cb077172" name="Changes" comment="Panchayat12">
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/view_'Application_Details'.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/view_citizen_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/view_complaints.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/view_schemes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/views_certificate_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/views_certificate_request.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/citizen/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/citizen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/citizen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/panchayat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/panchayat/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/'Application_Details'.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/'Application_Details'.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/'CertificateDetails'.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/'CertificateDetails'.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/'Certificate_request'.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/'Certificate_request'.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/'CitizenDetails'.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/'CitizenDetails'.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/'Complaints'.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/'Complaints'.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/'Schemes'.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/'Schemes'.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/contact.html" afterDir="false" />
-    </list>
+    <list default="true" id="c09a3f98-10a1-495e-8665-17e0cb077172" name="Changes" comment="Panchayat12" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
