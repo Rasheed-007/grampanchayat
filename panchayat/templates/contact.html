@@ -70,40 +70,25 @@
           <div class="form_container">
             <div class="heading_container">
               <h2>
-                Personal Login Details
+                Contact Us
               </h2>
             </div>
-            <form action="">
+            <form method="POST">
+              {% csrf_token %}
               <div>
-                <input type="text" placeholder="Scheme Id " />
+                <input type="text" placeholder="NAME " name="t1" />
               </div>
               <div>
-                <input type="text" placeholder="Schemes name" />
+                <input type="text" placeholder="Email ID"  name="t2"/>
               </div>
               <div>
-                <input type="text" placeholder="Details" />
+                <input type="text" placeholder="Message"  name="t3"/>
               </div>
               <div>
-                <input type="text" placeholder="Release Details"/>
+                <input type="text" placeholder="Feedback" name="t4"/>
               </div>
-              <div>
-                <input type="text" placeholder="Start Date"/>
-              </div>
-              <div>
-                <input type="text" placeholder="Eligiblity"/>
-              </div>
-              <div>
-                <input type="text" placeholder="Releasedby"/>
-              </div>
-              <div>
-                <input type="text" placeholder="Min Age"/>
-              </div>
-              <div>
-                <input type="text" placeholder="Max Age"/>
-              </div>
-              <div>
-                <input type="text" placeholder="Mobile No"/>
-              </div>
+
+
               <div class="d-flex ">
                 <button>
                   LOGIN

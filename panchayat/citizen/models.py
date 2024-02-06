@@ -8,7 +8,7 @@ class userlogin(models.Model):
     utype = models.CharField(max_length=20)
 
 
-class ApplicationDetails(models.Model):
+class applicationdetails(models.Model):
     Application_id = models.CharField(max_length=50)
     Application_type = models.CharField(max_length=255)
     Aadhar_no = models.CharField(max_length=50)
@@ -20,7 +20,7 @@ class ApplicationDetails(models.Model):
 
 
 
-class CertificateRequest(models.Model):
+class certificaterequest(models.Model):
     Request_id = models.CharField(max_length=50)
     Scheme_id = models.CharField(max_length=50)
     Aadhar_no = models.CharField(max_length=50)
@@ -29,7 +29,7 @@ class CertificateRequest(models.Model):
 
 
 
-class CertificateDetails(models.Model):
+class certificatedetails(models.Model):
     Request_id = models.CharField(max_length=50)
     Certificate_no = models.CharField(max_length=255)
     Type = models.CharField(max_length=255)
@@ -44,7 +44,7 @@ class CertificateDetails(models.Model):
 
 
 
-class CitizenDetails(models.Model):
+class citizendetails(models.Model):
     Aadhar_no = models.CharField( max_length=50)
     First_name = models.CharField(max_length=255)
     Last_name = models.CharField(max_length=255)
@@ -57,7 +57,7 @@ class CitizenDetails(models.Model):
     Sub_Cast = models.CharField(max_length=255)
 
 
-class Complaints(models.Model):
+class complaints(models.Model):
     Complaints_id = models.CharField(max_length=50)
     Givenby = models.CharField(max_length=255)
     Complaints_On = models.CharField(max_length=255)
@@ -65,7 +65,7 @@ class Complaints(models.Model):
     Time = models.CharField(max_length=50)
 
 
-class Schemes(models.Model):
+class schemes(models.Model):
     Schemes_id = models.CharField(max_length=50)
     Schemes_name = models.CharField(max_length=255)
     Details = models.CharField(max_length=500)
@@ -76,6 +76,14 @@ class Schemes(models.Model):
     Min_age = models.CharField(max_length=50)
     Max_age = models.CharField(max_length=50)
     Mobile_no = models.CharField(max_length=15)
+
+class contact(models.Model):
+    Name = models.CharField(max_length=50)
+    Email_id = models.CharField(max_length=50)
+    Message = models.CharField(max_length=500)
+    Feedback = models.CharField(max_length=250)
+
+
 
 
 

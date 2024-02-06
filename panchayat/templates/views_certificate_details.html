@@ -49,38 +49,49 @@
         <div class="col-md-5 col-lg-4 offset-md-1">
           <div class="form_container">
             <div class="heading_container">
-              <h2>Application Details</h2>
+              <h2>Certificate Details</h2>
             </div>
-            <form method="POST" >
-              {% csrf_token %}
-              <div>
-                <input type="text" placeholder="Application_id" name="t1" />
-              </div>
-              <div>
-                <input type="text" placeholder="Application_type" name="t2" />
-              </div>
-              <div>
-                <input type="text" placeholder="Aadhar_no" name="t3" />
-              </div>
-              <div>
-                <input type="text" placeholder="Name" name="t4" />
-              </div>
-              <div>
-                <input type="text" placeholder="Details" name="t5" />
-              </div>
-              <div>
-                <input type="text" placeholder="Date" name="t6" />
-              </div>
-              <div>
-                <input type="text" placeholder="Time" name="t7" />
-              </div>
-              <div>
-                <input type="text" placeholder="Status" name="t8" />
-              </div>
-              <div class="d-flex">
-                <button type="submit">ENTER</button>
-              </div>
-            </form>
+            
+            <table  border="2">
+                <tr>
+                    <td>Request_id </td>
+                    <td>Certificate_no</td>
+                    <td>Type </td>
+                    <td>Issue_Date </td>
+                    <td>Name</td>
+                    <td>Father_Name  </td>
+                    <td> Mother_Name  </td>
+                    <td>Reason</td>
+                    <td> Date </td>
+                    <td>time</td>
+                    <td>status  </td>
+                    <td> Delete </td>
+                
+
+  
+  
+                </tr>
+              {% for u in userdict %}
+                <tr>
+                    <td>{{ u.Request_id }} </td>
+                    <td>{{ u.Certificate_no }} </td>
+                    <td>{{ u.Type }} </td>
+                    <td>{{ u.Issue_Date }} </td>
+                    <td>{{ u.Name }} </td>
+                    <td>{{ u.Father_Name }} </td>
+                    <td>{{ u.Mother_Name }} </td>
+                    <td>{{ u.Reason }} </td>
+                    <td>{{ u.Date }} </td>
+                    <td>{{ u.time }} </td>
+                    <td>{{ u.status }} </td>
+                    <td> <a href="{% url 'certificatedetails_del' u.id %}"> Delete </a> </td>
+  
+  
+                </tr>
+                {% endfor %}
+            </table>
+
+
           </div>
         </div>
       </div>

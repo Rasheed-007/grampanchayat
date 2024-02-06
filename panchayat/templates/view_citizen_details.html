@@ -49,38 +49,47 @@
         <div class="col-md-5 col-lg-4 offset-md-1">
           <div class="form_container">
             <div class="heading_container">
-              <h2>Application Details</h2>
+              <h2>Citizen Details</h2>
             </div>
-            <form method="POST" >
-              {% csrf_token %}
-              <div>
-                <input type="text" placeholder="Application_id" name="t1" />
-              </div>
-              <div>
-                <input type="text" placeholder="Application_type" name="t2" />
-              </div>
-              <div>
-                <input type="text" placeholder="Aadhar_no" name="t3" />
-              </div>
-              <div>
-                <input type="text" placeholder="Name" name="t4" />
-              </div>
-              <div>
-                <input type="text" placeholder="Details" name="t5" />
-              </div>
-              <div>
-                <input type="text" placeholder="Date" name="t6" />
-              </div>
-              <div>
-                <input type="text" placeholder="Time" name="t7" />
-              </div>
-              <div>
-                <input type="text" placeholder="Status" name="t8" />
-              </div>
-              <div class="d-flex">
-                <button type="submit">ENTER</button>
-              </div>
-            </form>
+
+            <table  border="2">
+                <tr>
+                    <td>Aadhar_no </td>
+                    <td>First_name</td>
+                    <td>Last_name </td>
+                    <td>Father_name </td>
+                    <td>Mother_name  </td>
+                    <td>DateOfBirth</td>
+                    <td>Gender </td>
+                    <td>Mobile_no</td>
+                    <td>Cast  </td>
+                    <td>Sub_Cast </td>
+                    <td>Delete</td>
+
+
+
+
+                </tr>
+              {% for u in userdict %}
+                <tr>
+                    <td>{{ u.Aadhar_no }} </td>
+                    <td>{{ u.First_name }} </td>
+                    <td>{{ u.Last_name }} </td>
+                    <td>{{ u.Father_name }} </td>
+                    <td>{{ u.Mother_name }} </td>
+                    <td>{{ u.DateOfBirth }} </td>
+                    <td>{{ u.Gender }} </td>
+                    <td>{{ u.Mobile_no }} </td>
+                    <td>{{ u.Cast }} </td>
+                    <td>{{ u.Sub_Cast }} </td>
+                    <td> <a href="{% url 'complaints_del' u.id %}"> Delete </a> </td>
+
+
+                </tr>
+                {% endfor %}
+            </table>
+
+
           </div>
         </div>
       </div>

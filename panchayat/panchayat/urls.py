@@ -27,4 +27,34 @@ urlpatterns = [
     url('insertComplaints', views.insertComplaints, name="insertComplaints"),
     url('insertSchemes', views.insertSchemes, name="insertSchemes"),
 
+    url('insertcontact', views.insertcontact,name="insertcontact"),
+
+
+
+    #Application detalis view and delete from database
+    url('view_applicationsdetails', views.view_applicationsdetails,name="view_applicationsdetails"),
+    url('applicationdetails_del/(?P<pk>\d+)/$', views.applicationdetails_del, name='applicationdetails_del'),
+
+    #cdertifiate request view and delete from database
+    url('view_certificaterequest', views.view_certificaterequest,name="view_certificaterequest"),
+    url('certificaterequest_del/(?P<pk>\d+)/$', views.certificaterequest_del, name='certificaterequest_del'),
+
+    #certifiate detalis view and delete from database
+    url('view_certificatedetails', views.view_certificatedetails,name="view_certificatedetails"),
+    url('certificatedetails_del/(?P<pk>\d+)/$', views.certificatedetails_del, name='certificatedetails_del'),
+
+    #citizen detalis view and delete from database
+    url('view_citizendetails', views.view_citizendetails,name="view_citizendetails"),
+    url('citizendetails_del/(?P<pk>\d+)/$', views.citizendetails_del, name='citizendetails_del'),
+
+    #Complaints view and delete from database
+    url('view_complaints', views.view_complaints,name="view_complaints"),
+    url('complaints_del/(?P<pk>\d+)/$', views.complaints_del, name='complaints_del'),
+
+    #Complaints view and delete from database
+    url('view_schemes', views.view_schemes,name="view_schemes"),
+    url('schemes_del/(?P<pk>\d+)/$', views.schemes_del, name='schemes_del'),
+
+
+
 ]

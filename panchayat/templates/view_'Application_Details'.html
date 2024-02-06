@@ -51,36 +51,39 @@
             <div class="heading_container">
               <h2>Application Details</h2>
             </div>
-            <form method="POST" >
-              {% csrf_token %}
-              <div>
-                <input type="text" placeholder="Application_id" name="t1" />
-              </div>
-              <div>
-                <input type="text" placeholder="Application_type" name="t2" />
-              </div>
-              <div>
-                <input type="text" placeholder="Aadhar_no" name="t3" />
-              </div>
-              <div>
-                <input type="text" placeholder="Name" name="t4" />
-              </div>
-              <div>
-                <input type="text" placeholder="Details" name="t5" />
-              </div>
-              <div>
-                <input type="text" placeholder="Date" name="t6" />
-              </div>
-              <div>
-                <input type="text" placeholder="Time" name="t7" />
-              </div>
-              <div>
-                <input type="text" placeholder="Status" name="t8" />
-              </div>
-              <div class="d-flex">
-                <button type="submit">ENTER</button>
-              </div>
-            </form>
+            
+            <table  border="2">
+                <tr>
+                    <td>Application_id </td>
+                    <td>Application_type</td>
+                    <td>Aadhar_no </td>
+                    <td>Name </td>
+                    <td>Details</td>
+                    <td>Date  </td>
+                    <td> Time  </td>
+                    <td>Status</td>
+
+  
+  
+                </tr>
+              {% for u in userdict %}
+                <tr>
+                    <td>{{ u.Application_id }} </td>
+                    <td>{{ u.Application_type }} </td>
+                    <td>{{ u.Aadhar_no }} </td>
+                    <td>{{ u.Name }} </td>
+                    <td>{{ u.Details }} </td>
+                    <td>{{ u.Date }} </td>
+                    <td>{{ u.Time }} </td>
+                    <td>{{ u.Status }} </td>
+                    <td> <a href="{% url 'applicationdetails_del' u.id %}"> Delete </a> </td>
+  
+  
+                </tr>
+                {% endfor %}
+            </table>
+
+
           </div>
         </div>
       </div>
