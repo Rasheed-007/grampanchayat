@@ -20,8 +20,10 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url('userlogin',views.userlogin,name="userlogin"),
+    #url('userlogin',views.userlogin,name="userlogin"),
     url('logcheck', views.logcheck, name="logcheck"),
+    url('^$', views.index, name="index"),
+    url('index',views.index,name='index'),
     url('insertapplicationDetails', views.insertapplicationDetails, name="insertapplicationDetails"),
     url('insertCertificaterequest', views.insertCertificaterequest, name="insertCertificaterequest"),
     url('insertCertificateDetails', views.insertCertificateDetails, name="insertCertificateDetails"),
@@ -30,6 +32,11 @@ urlpatterns = [
     url('insertSchemes', views.insertSchemes, name="insertSchemes"),
 
     url('insertcontact', views.insertcontact,name="insertcontact"),
+    url('sendpass', views.sendpass, name="sendpass"),
+
+
+
+
 
 
 

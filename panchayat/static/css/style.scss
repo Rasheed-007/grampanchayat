@@ -147,6 +147,7 @@ a:focus {
       .nav-link {
         padding: 5px 25px;
         color: $white;
+        float: right;
         text-align: center;
         text-transform: uppercase;
         border-radius: 5px;
@@ -170,8 +171,8 @@ a:focus {
 
 .custom_nav-container .navbar-toggler {
   padding: 0;
-  width: 37px;
-  height: 42px;
+  width: auto;
+  height: auto;
   transition: all 0.3s;
 
   span {

@@ -1,3 +1,5 @@
+import smtplib
+
 from django.shortcuts import render
 
 from citizen.models import applicationdetails
@@ -12,6 +14,9 @@ from citizen.models import userlogin
 
 
 # Create your views here.
+def index(request):
+    return render(request, "index.html")
+
 
 # create user login page
 # def userlogin(request):
@@ -22,7 +27,6 @@ from citizen.models import userlogin
 #         return render(request, "userlogin_page.html")
 #
 #     return render(request, "userlogin_page.html")
-
 
 def logcheck(request):
     if request.method == "POST":
@@ -171,7 +175,7 @@ def applicationdetails_del(request, pk):
     rid = applicationdetails.objects.get(id=pk)
     rid.delete()
     userdict = applicationdetails.objects.all()
-    return render(request, "views_certificate_details.html", {'userdict': userdict})
+    return render(request, "view_'Application_Details'.html", {'userdict': userdict})
 
 
 def view_certificaterequest(request):
@@ -244,3 +248,21 @@ def contact_del(request, pk):
     rid.delete()
     userdict = contact.objects.all()
     return render(request, "view_contact.html", {'userdict': userdict})
+
+
+def sendpass(request):
+    if (request.method == "POST"):
+        s1 = request.POST.get("t1")
+        udata = userlogin.objects.get(username=s1)
+        upass = udata.password
+        mail = smtplib.SMTP('smtp.gmail.com', 587)
+        mail.ehlo()
+        mail.starttls()
+        mail.login('zoro11112024@gmail.com', 'gxqj tvgj ktmg onfn')
+        mail.sendmail('zoro11112024@gmail.com', s1, upass)
+        mail.close()
+        return render(request, "userlogin_page.html")
+    return render(request, "forgotpassword.html")
+
+
+
