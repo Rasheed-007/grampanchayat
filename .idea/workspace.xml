@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c09a3f98-10a1-495e-8665-17e0cb077172" name="Changes" comment="Update workspace.xml">
-      <change afterPath="$PROJECT_DIR$/panchayat/static/images/slider-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panchayat/templates/forgotpassword.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/citizen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/panchayat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/panchayat/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/static/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/static/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/admin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/admin_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/citizen_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/citizen_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/userlogin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/userlogin_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/view_citizen_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/view_citizen_details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/view_complaints.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/view_complaints.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/view_schemes.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/view_schemes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panchayat/templates/views_certificate_request.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/views_certificate_request.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="panch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,19 +41,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;R:/FUEL/Final Project/panchayat/panchayat/templates&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "R:/FUEL/Final Project/panchayat"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="R:\FUEL\Final Project\panchayat\panchayat\templates" />
@@ -145,29 +127,12 @@
       <option name="project" value="LOCAL" />
       <updated>1707141022771</updated>
     </task>
-    <task id="LOCAL-00004" summary="Update workspace.xml">
-      <option name="closed" value="true" />
-      <created>1707220272790</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1707220272790</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update workspace.xml">
-      <option name="closed" value="true" />
-      <created>1707220279006</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1707220279006</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Panchayat12" />
-    <MESSAGE value="Update workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Panchayat12" />
   </component>
 </project>
