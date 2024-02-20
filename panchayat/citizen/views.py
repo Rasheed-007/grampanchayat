@@ -11,11 +11,28 @@ from citizen.models import citizendetails
 from citizen.models import certificatedetails
 from citizen.models import contact
 from citizen.models import userlogin
+from citizen.models import newuser
 
 
 # Create your views here.
 def index(request):
     return render(request, "index.html")
+
+
+def insertnewuser(request):
+    if (request.method == 'POST'):
+        s1 = request.POST.get("t1")
+        s2 = request.POST.get("t2")
+        s3 = request.POST.get("t3")
+        s4 = request.POST.get("t4")
+        s5 = request.POST.get("t5")
+        s6 = request.POST.get("t6")
+        userlogin.objects.create(username=s1, password=s6, utype=s5)
+        newuser.objects.create(name=s1, emailid=s2, mobileno=s3, address=s4, usertype=s5, password=s6)
+
+        return render(request, "newuser.html")
+
+    return render(request, "newuser.html")
 
 
 # create user login page
@@ -263,6 +280,3 @@ def sendpass(request):
         mail.close()
         return render(request, "userlogin_page.html")
     return render(request, "forgotpassword.html")
-
-
-

@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c09a3f98-10a1-495e-8665-17e0cb077172" name="Changes" comment="Update workspace.xml">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16-02-2024_11_04_am_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_16-02-2024_11_04_am__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10-02-2024_01_26_pm_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10-02-2024_01_26_pm__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/panchayat/static/images/slider-img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/panchayat/templates/newuser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/citizen/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/citizen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/citizen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/citizen/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/panchayat/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/panchayat/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/static/images/slider-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panchayat/templates/userlogin_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/panchayat/templates/userlogin_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +32,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="panch" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707552639038</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1708421527953</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708421527953</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1708421537321</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708421537321</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

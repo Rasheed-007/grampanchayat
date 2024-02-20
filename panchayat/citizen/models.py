@@ -7,6 +7,14 @@ class userlogin(models.Model):
     password = models.CharField(max_length=20)
     utype = models.CharField(max_length=20)
 
+class newuser(models.Model):
+    name = models.CharField(max_length=50)
+    emailid = models.CharField(max_length=50)
+    mobileno = models.CharField(max_length=20)
+    address = models.CharField(max_length=75)
+    usertype = models.CharField(max_length=10)
+    password = models.CharField(max_length=50)
+
 
 class applicationdetails(models.Model):
     Application_id = models.CharField(max_length=50)

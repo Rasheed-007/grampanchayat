@@ -24,6 +24,7 @@ urlpatterns = [
     url('logcheck', views.logcheck, name="logcheck"),
     url('^$', views.index, name="index"),
     url('index',views.index,name='index'),
+    url('insertnewuser', views.insertnewuser,name='insertnewuser'),
     url('insertapplicationDetails', views.insertapplicationDetails, name="insertapplicationDetails"),
     url('insertCertificaterequest', views.insertCertificaterequest, name="insertCertificaterequest"),
     url('insertCertificateDetails', views.insertCertificateDetails, name="insertCertificateDetails"),
